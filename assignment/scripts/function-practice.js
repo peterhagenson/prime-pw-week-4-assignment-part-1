@@ -125,18 +125,18 @@ console.log(sumAll(arr));
 //     return an empty array. Note: The input array should not change.
 
 let input = [-7, 4, -5, 9, 3, 5, -6, 4];
-let newArr = [];
 
-function mkNewArr() {
-  for (i = 0; i < input.length; i++) {
-    if (input[i] > 0) {
+function getPositiveValues(fromArr) {
+  newArr = [];
+  for (i = 0; i < fromArr.length; i++) {
+    if (fromArr[i] > 0) {
       newArr.push(input[i]);
     }
   }
   return newArr;
 }
 
-console.log(mkNewArr(input));
+console.log(getPositiveValues(input));
 console.log(input);
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
